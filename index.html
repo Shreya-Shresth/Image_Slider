@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=1000" alt="Machu Picchu">
+                <div class="caption">Machu Picchu, Peru</div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1000" alt="Eiffel Tower">
+                <div class="caption">Eiffel Tower, Paris</div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=1000" alt="Grand Canyon">
+                <div class="caption">Grand Canyon, USA</div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=1000" alt="Venice">
+                <div class="caption">Venice, Italy</div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1530870110042-98b2cb110834?q=80&w=1000" alt="Santorini">
+                <div class="caption">Santorini, Greece</div>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <div class="thumbnails">
+        <img class="thumbnail active" src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=1000" alt="Machu Picchu Thumbnail" onclick="currentSlide(0)">
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1000" alt="Eiffel Tower Thumbnail" onclick="currentSlide(1)">
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=1000" alt="Grand Canyon Thumbnail" onclick="currentSlide(2)">
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=1000" alt="Venice Thumbnail" onclick="currentSlide(3)">
+        <img class="thumbnail" src="https://images.unsplash.com/photo-1530870110042-98b2cb110834?q=80&w=1000" alt="Santorini Thumbnail" onclick="currentSlide(4)">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
